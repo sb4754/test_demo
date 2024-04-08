@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <title>Internet Banking</title>
     <style>
+        /* Basic CSS styles for layout */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
             text-align: center;
-            color: #333;
         }
-        p {
-            color: #666;
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Welcome to My First Web Page</h1>
-    <p>This is a basic HTML web page.</p>
-    <p>Feel free to modify and customize it as you like!</p>
-    <p>Anyways I am just learning how to work with Git and GitHub and push the same to the remote repository</p>
-</div>
+<header>
+    <h1>Internet Banking</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Transfer Money</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Welcome to Internet Banking</h2>
+    <p>This is a demo internet banking web page. </p>
+    <p> Please log in to access your account information and perform transactions.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 Internet Banking. All rights reserved.</p>
+</footer>
 </body>
 </html>
