@@ -1,0 +1,92 @@
+GIT
+- Distributed version control system
+- For tracking & making changes in computer files
+- Coordinates work between multiple developers on a single project without having on a same network
+- Tracks every version/change
+- Revert to previous states if needed
+
+
+
+NOTES
+
+UNTRACKED FILES
+The files in our working directory that git is not currently tracking
+To add them to the staging area we use "$ git add", & then it becomes a tracked file
+
+VIM EDITOR
+- Is a default text editor, that is used to edit commit messages,
+- To start typing text, press 'i' to enter Insert mode
+- 'Initial commit' will give a comment as this is a initial commit
+- To save your changes and exit Vim, type :wq and press Enter [wq - write & quit / save changes & exit vim]
+
+GIT BASH
+- Command line tool
+
+DIRECTORY
+- Folder
+
+.GIT FOLDER
+- It is a hidden directory that is created when we initialize a git repository
+- It contains all the information that git needs to manage our project's version control
+- They collectively enable Git to track changes, manage branches, store metadata, and perform various other version control tasks within our project.
+
+
+
+
+BASIC COMMANDS
+
+$ git init
+Initialize the local git repository
+It also creates .git folder, which is hidden by default
+
+$ git add <File_name>
+Add file(s) to the staging area / Index
+We can run this command as many times as we need to before committing
+
+$ git status
+Check status of the working tree
+
+$ git commit
+It commits the file's in staging area to the local repository
+
+$ git push
+Pushes the local repository to the remote repository
+
+$ git pull
+Pulls the latest version of the remote repository
+
+$ git clone
+Copies the remote repository to local machine
+
+$ git log
+We can see the snapshots of the commits
+
+$ touch <file_name>
+It create a new empty file
+Or, if it does exist the command will update its modification timestamp to the current time
+
+$ git config --global user.name 'user_name'
+It is used to set the global user name configuration for our git installation
+
+$ git config --global user.email 'user_email'
+It is used to set the global user email configuration for our git installation
+After this if we make any commit, we make it across all git repositories on our system, will be associated with the email address, unless overridden locally within a specific repository
+
+$ git rm --cached <File_name>
+It removes the file from the staging area, without deleting it from our working directory
+Means, it tells git to stop tracking the file, but leave it in our file system
+
+$ git add *.<file_extension>
+It will add all files with specified file extension [Like $ git add *.html]
+
+$ git add .
+It is used to add all files / changes in the current directory, to the staging area
+
+$ touch .gitignore
+A file that include the files / folders that we want to ignore or not include to track [Like *.log - It will ignore all .log files]
+
+$ git branch <branch_name>
+It will create a feature branch
+
+$ git checkout <branch_name>
+It is used to switch to a different branch
