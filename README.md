@@ -1,0 +1,1 @@
+This is the whole git & github in nutshell.
